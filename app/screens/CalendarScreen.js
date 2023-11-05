@@ -1,8 +1,8 @@
 import * as React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 import colors from '../config/colors';
 
-export default function CalendarScreen({ navigation }) {
+function CalendarScreen() {
   return <View style={styles.mainContainer}></View>;
 }
 
@@ -12,3 +12,5 @@ const styles = StyleSheet.create({
     backgroundColor: colors.primary,
   },
 });
+
+export default CalendarScreen;

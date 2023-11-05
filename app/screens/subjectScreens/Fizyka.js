@@ -2,7 +2,7 @@ import * as React from 'react';
 import { View, StyleSheet } from 'react-native';
 import colors from '../config/colors';
 
-function SettingScreen() {
+function Fizyka() {
   return <View style={styles.mainContainer}></View>;
 }
 
@@ -13,4 +13,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default SettingScreen;
+export default Fizyka;

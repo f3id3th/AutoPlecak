@@ -24,6 +24,7 @@ function MainOverlay() {
         initialRouteName={subjectsName}
         screenOptions={({ route }) => ({
           tabBarIcon: ({ focused, color, size }) => {
+            size = 42;
             let iconName;
 
             if (route.name === subjectsName) {
@@ -34,7 +35,7 @@ function MainOverlay() {
               iconName = focused ? 'settings' : 'settings-outline';
             }
 
-            return <Ionicons name={iconName} color={color} size={42} />;
+            return <Ionicons name={iconName} color={color} size={size} />;
           },
           headerBackground: () => (
             <View style={{ flex: 1, backgroundColor: colors.background }} />
@@ -42,18 +43,21 @@ function MainOverlay() {
           headerLeft: props => (
             <Image
               source={{
-                uri: '',
+                uri: 'https://ih0.redbubble.net/image.5139669085.2272/raf,360x360,075,t,fafafa:ca443f4786.jpg',
               }}
               style={{
-                resizeMode: 'contain',
+                resizeMode: 'center',
                 height: 100,
                 width: 100,
-                flex: 1,
+                flex: 0.9,
               }}
             />
           ),
-
-          headerTitleStyle: { color: colors.primary },
+          headerTitleStyle: {
+            color: colors.primary,
+            textShadowColor: colors.bright,
+            textShadowRadius: 3,
+          },
           headerTitleAlign: 'center',
 
           tabBarBackground: () => (
