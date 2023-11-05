@@ -217,7 +217,7 @@ const styles = StyleSheet.create({
   mainContainer: {
     flex: 1,
     backgroundColor: colors.primary,
-    alignItems: 'center',
+    alignItems: 'flex-end',
     justifyContent: 'space-evenly',
   },
   saveContainer: {
@@ -234,7 +234,8 @@ const styles = StyleSheet.create({
   subjectContainer: {
     justifyContent: 'center',
     alignItems: 'center',
-    borderRadius: 40,
+    borderTopLeftRadius: 40,
+    borderBottomLeftRadius: 40,
     backgroundColor: colors.dark,
     paddingVertical: 20,
     width: '95%',
