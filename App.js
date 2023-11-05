@@ -1,6 +1,8 @@
 import React from 'react';
-import WelcomeScreen from './app/screens/WelcomeScreen';
+import MainOverlay from './app/screens/MainOverlay';
 
-export default function App() {
-  return <WelcomeScreen />;
+function App() {
+  return <MainOverlay />;
 }
+
+export default App;

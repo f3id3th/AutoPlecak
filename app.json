@@ -5,13 +5,13 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./app/assets/icon.png",
-    "userInterfaceStyle": "light",
     "splash": {
       "image": "./app/assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "assetBundlePatterns": ["**/*"],
+    "userInterfaceStyle": "dark",
     "ios": {
       "supportsTablet": true
     },
@@ -26,7 +26,7 @@
     },
     "extra": {
       "eas": {
-        "projectId": "1d73c84c-d930-4dfd-b948-6d836d90851a"
+        "projectId": "04cfbb0e-37e7-4d94-b937-38256fbad164"
       }
     },
     "owner": "feideth"

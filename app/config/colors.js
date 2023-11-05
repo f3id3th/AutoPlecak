@@ -1,4 +1,6 @@
 export default {
-  priamry: '#fc5c65',
-  secoundary: '#4ecdc4',
+  background: '#131515',
+  primary: '#E7E5DF',
+  bright: '#73EEDC',
+  dark: '#48A9A6',
 };
