@@ -4,6 +4,7 @@ import { View, Image } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import customIcons from '../config/customIcons';
 
 import SubjectsScreen from './SubjectsScreen';
 import CalendarScreen from './CalendarScreen';
@@ -42,14 +43,12 @@ function MainOverlay() {
           ),
           headerLeft: props => (
             <Image
-              source={{
-                uri: 'https://ih0.redbubble.net/image.5139669085.2272/raf,360x360,075,t,fafafa:ca443f4786.jpg',
-              }}
+              source={customIcons.app}
               style={{
                 resizeMode: 'center',
                 height: 100,
                 width: 100,
-                flex: 0.9,
+                flex: 0.85,
               }}
             />
           ),

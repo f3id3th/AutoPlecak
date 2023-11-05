@@ -1,3 +1,3 @@
 export default {
-  app: require(''),
+  app: require('../assets/icons/icon.png'),
 };
