@@ -24,7 +24,7 @@ function SubjectView({ navigation }) {
       {/* Matematyka */}
       <TouchableOpacity
         style={styles.subjectContainer}
-        onPress={() => navigation.navigate('Matemtyka')}
+        onPress={() => navigation.navigate('Matematyka')}
       >
         <View>
           <View>
@@ -101,10 +101,7 @@ function Fizyka({ navigation }) {
       <View style={styles.pageContainer}>
         <Text style={styles.pageText}>Podręcznik</Text>
 
-        <TouchableOpacity
-          style={styles.pageTouchable}
-          onPress={() => navigation.navigate('Fizyka')}
-        >
+        <TouchableOpacity style={styles.pageTouchable}>
           <View>
             <View>
               <Text numberOfLines={1} style={styles.pageTouchableText}>
@@ -126,10 +123,7 @@ function Fizyka({ navigation }) {
       <View style={styles.pageContainer}>
         <Text style={styles.pageText}>Ćwiczenia</Text>
 
-        <TouchableOpacity
-          style={styles.pageTouchable}
-          onPress={() => navigation.navigate('Fizyka')}
-        >
+        <TouchableOpacity style={styles.pageTouchable}>
           <View>
             <View>
               <Text numberOfLines={1} style={styles.pageTouchableText}>
@@ -147,6 +141,7 @@ function Fizyka({ navigation }) {
           />
         </TouchableOpacity>
       </View>
+
       <View style={{ justifyContent: 'center', width: '100%' }}>
         <View style={styles.addContainer}>
           <TouchableOpacity onPress={() => navigation.navigate('addBook')}>
@@ -161,7 +156,250 @@ function Fizyka({ navigation }) {
     </View>
   );
 }
+function Chemia({ navigation }) {
+  const [isChecked, setChecked] = useState(true);
+  return (
+    <View style={styles.pageMain}>
+      <View style={styles.pageContainer}>
+        <Text style={styles.pageText}>Zeszyt</Text>
+        <Checkbox
+          color={isChecked ? colors.dark : colors.background}
+          style={styles.checkbox}
+          value={isChecked}
+          onValueChange={setChecked}
+        />
+      </View>
 
+      <View style={styles.pageContainer}>
+        <Text style={styles.pageText}>Podręcznik</Text>
+
+        <TouchableOpacity style={styles.pageTouchable}>
+          <View>
+            <View>
+              <Text numberOfLines={1} style={styles.pageTouchableText}>
+                Chemia zakres podstawowy
+              </Text>
+            </View>
+          </View>
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <Ionicons
+            name={'camera'}
+            color={colors.background}
+            size={40}
+            style={{ paddingHorizontal: 4 }}
+          />
+        </TouchableOpacity>
+      </View>
+
+      <View style={{ justifyContent: 'center', width: '100%' }}>
+        <View style={styles.addContainer}>
+          <TouchableOpacity onPress={() => navigation.navigate('addBook')}>
+            <View>
+              <View>
+                <Text style={styles.addText}>+ Dodaj Książkę</Text>
+              </View>
+            </View>
+          </TouchableOpacity>
+        </View>
+      </View>
+    </View>
+  );
+}
+function Polski({ navigation }) {
+  const [isChecked, setChecked] = useState(true);
+  return (
+    <View style={styles.pageMain}>
+      <View style={styles.pageContainer}>
+        <Text style={styles.pageText}>Zeszyt</Text>
+        <Checkbox
+          color={isChecked ? colors.dark : colors.background}
+          style={styles.checkbox}
+          value={isChecked}
+          onValueChange={setChecked}
+        />
+      </View>
+
+      <View style={styles.pageContainer}>
+        <Text style={styles.pageText}>Podręcznik</Text>
+
+        <TouchableOpacity style={styles.pageTouchable}>
+          <View>
+            <View>
+              <Text numberOfLines={1} style={styles.pageTouchableText}>
+                Język Polski klasa 4 zakres podstawowy
+              </Text>
+            </View>
+          </View>
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <Ionicons
+            name={'camera'}
+            color={colors.background}
+            size={40}
+            style={{ paddingHorizontal: 4 }}
+          />
+        </TouchableOpacity>
+      </View>
+
+      <View style={styles.pageContainer}>
+        <Text style={styles.pageText}>Lektura</Text>
+
+        <TouchableOpacity style={styles.pageTouchable}>
+          <View>
+            <View>
+              <Text numberOfLines={1} style={styles.pageTouchableText}>
+                Potop
+              </Text>
+            </View>
+          </View>
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <Ionicons
+            name={'camera'}
+            color={colors.background}
+            size={40}
+            style={{ paddingHorizontal: 4 }}
+          />
+        </TouchableOpacity>
+      </View>
+
+      <View style={{ justifyContent: 'center', width: '100%' }}>
+        <View style={styles.addContainer}>
+          <TouchableOpacity onPress={() => navigation.navigate('addBook')}>
+            <View>
+              <View>
+                <Text style={styles.addText}>+ Dodaj Książkę</Text>
+              </View>
+            </View>
+          </TouchableOpacity>
+        </View>
+      </View>
+    </View>
+  );
+}
+function Matematyka({ navigation }) {
+  const [isChecked, setChecked] = useState(true);
+  return (
+    <View style={styles.pageMain}>
+      <View style={styles.pageContainer}>
+        <Text style={styles.pageText}>Zeszyt</Text>
+        <Checkbox
+          color={isChecked ? colors.dark : colors.background}
+          style={styles.checkbox}
+          value={isChecked}
+          onValueChange={setChecked}
+        />
+      </View>
+
+      <View style={styles.pageContainer}>
+        <Text style={styles.pageText}>Podręcznik</Text>
+
+        <TouchableOpacity style={styles.pageTouchable}>
+          <View>
+            <View>
+              <Text numberOfLines={1} style={styles.pageTouchableText}>
+                Matematyka zakres rozszerzony
+              </Text>
+            </View>
+          </View>
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <Ionicons
+            name={'camera'}
+            color={colors.background}
+            size={40}
+            style={{ paddingHorizontal: 4 }}
+          />
+        </TouchableOpacity>
+      </View>
+
+      <View style={styles.pageContainer}>
+        <Text style={styles.pageText}>Ćwiczenia</Text>
+
+        <TouchableOpacity style={styles.pageTouchable}>
+          <View>
+            <View>
+              <Text numberOfLines={1} style={styles.pageTouchableText}>
+                Zbiór zadań Matematyka zakres rozszerzony
+              </Text>
+            </View>
+          </View>
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <Ionicons
+            name={'camera'}
+            color={colors.background}
+            size={40}
+            style={{ paddingHorizontal: 4 }}
+          />
+        </TouchableOpacity>
+      </View>
+
+      <View style={{ justifyContent: 'center', width: '100%' }}>
+        <View style={styles.addContainer}>
+          <TouchableOpacity onPress={() => navigation.navigate('addBook')}>
+            <View>
+              <View>
+                <Text style={styles.addText}>+ Dodaj Książkę</Text>
+              </View>
+            </View>
+          </TouchableOpacity>
+        </View>
+      </View>
+    </View>
+  );
+}
+function Język_Angielski({ navigation }) {
+  const [isChecked, setChecked] = useState(true);
+  return (
+    <View style={styles.pageMain}>
+      <View style={styles.pageContainer}>
+        <Text style={styles.pageText}>Zeszyt</Text>
+        <Checkbox
+          color={isChecked ? colors.dark : colors.background}
+          style={styles.checkbox}
+          value={isChecked}
+          onValueChange={setChecked}
+        />
+      </View>
+
+      <View style={styles.pageContainer}>
+        <Text style={styles.pageText}>Podręcznik</Text>
+
+        <TouchableOpacity style={styles.pageTouchable}>
+          <View>
+            <View>
+              <Text numberOfLines={1} style={styles.pageTouchableText}>
+                Język Angielski zakres podstawowy
+              </Text>
+            </View>
+          </View>
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <Ionicons
+            name={'camera'}
+            color={colors.background}
+            size={40}
+            style={{ paddingHorizontal: 4 }}
+          />
+        </TouchableOpacity>
+      </View>
+
+      <View style={{ justifyContent: 'center', width: '100%' }}>
+        <View style={styles.addContainer}>
+          <TouchableOpacity onPress={() => navigation.navigate('addBook')}>
+            <View>
+              <View>
+                <Text style={styles.addText}>+ Dodaj Książkę</Text>
+              </View>
+            </View>
+          </TouchableOpacity>
+        </View>
+      </View>
+    </View>
+  );
+}
 const Stack = createNativeStackNavigator();
 function SubjectScreen() {
   return (
@@ -175,6 +413,82 @@ function SubjectScreen() {
         <Stack.Screen
           name="Fizyka"
           component={Fizyka}
+          options={{
+            headerRight: props => (
+              <TouchableOpacity style={styles.saveContainer}>
+                <View>
+                  <View>
+                    <Text style={styles.saveText}>Zapisz</Text>
+                  </View>
+                </View>
+              </TouchableOpacity>
+            ),
+            headerTitleStyle: {
+              color: colors.background,
+            },
+            headerStyle: { backgroundColor: colors.dark },
+          }}
+        />
+        <Stack.Screen
+          name="Chemia"
+          component={Chemia}
+          options={{
+            headerRight: props => (
+              <TouchableOpacity style={styles.saveContainer}>
+                <View>
+                  <View>
+                    <Text style={styles.saveText}>Zapisz</Text>
+                  </View>
+                </View>
+              </TouchableOpacity>
+            ),
+            headerTitleStyle: {
+              color: colors.background,
+            },
+            headerStyle: { backgroundColor: colors.dark },
+          }}
+        />
+        <Stack.Screen
+          name="Polski"
+          component={Polski}
+          options={{
+            headerRight: props => (
+              <TouchableOpacity style={styles.saveContainer}>
+                <View>
+                  <View>
+                    <Text style={styles.saveText}>Zapisz</Text>
+                  </View>
+                </View>
+              </TouchableOpacity>
+            ),
+            headerTitleStyle: {
+              color: colors.background,
+            },
+            headerStyle: { backgroundColor: colors.dark },
+          }}
+        />
+        <Stack.Screen
+          name="Matematyka"
+          component={Matematyka}
+          options={{
+            headerRight: props => (
+              <TouchableOpacity style={styles.saveContainer}>
+                <View>
+                  <View>
+                    <Text style={styles.saveText}>Zapisz</Text>
+                  </View>
+                </View>
+              </TouchableOpacity>
+            ),
+            headerTitleStyle: {
+              color: colors.background,
+            },
+            headerStyle: { backgroundColor: colors.dark },
+          }}
+        />
+        <Stack.Screen
+          name="Jezyk Angielski"
+          component={Język_Angielski}
           options={{
             headerRight: props => (
               <TouchableOpacity style={styles.saveContainer}>
