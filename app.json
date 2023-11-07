@@ -4,25 +4,22 @@
     "slug": "autoplecak",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./app/assets/icon.png",
-    "splash": {
-      "image": "./app/assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
+    "icon": "./app/assets/icons/icon.png",
     "assetBundlePatterns": ["**/*"],
     "userInterfaceStyle": "dark",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.feideth.autoplecak"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+        "foregroundImage": "./app/assets/icons/icon.png",
+        "backgroundColor": "#73EEDC"
+      },
+      "package": "com.feideth.autoplecak"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./app/assets/icons/icon.png"
     },
     "extra": {
       "eas": {
